@@ -13,7 +13,7 @@ Shader "Skybox/Cubemap Extended"
 		[StyledCategory(Rotation Settings)]_Rotationn("[ Rotationn ]", Float) = 1
 		[Toggle(_ENABLEROTATION_ON)] _EnableRotation("Enable Rotation", Float) = 0
 		[IntRange][Space(10)]_Rotation("Rotation", Range( 0 , 360)) = 0
-		_RotationSpeed("Rotation Speed", Float) = 1
+		_RotationSpeed("Rotation Speed", Float) = 0
 		[StyledCategory(Fog Settings)]_Fogg("[ Fogg ]", Float) = 1
 		[Toggle(_ENABLEFOG_ON)] _EnableFog("Enable Fog", Float) = 0
 		[StyledMessage(Info, The fog color is controlled by the fog color set in the Lighting panel., _EnableFog, 1, 10, 0)]_FogMessage("# FogMessage", Float) = 0
@@ -130,7 +130,7 @@ Shader "Skybox/Cubemap Extended"
 				float3 VertexPosOtherAxis82_g1 = appendResult81_g1;
 				half Angle44_g1 = ( 1.0 - radians( ( _Rotation + ( _Time.y * _RotationSpeed ) ) ) );
 				#ifdef _ENABLEROTATION_ON
-				float3 staticSwitch1164 = ( ( VertexPosRotationAxis50_g1 + ( VertexPosOtherAxis82_g1 * cos( Angle44_g1 ) ) + ( cross( float3(0,1,0) , VertexPosOtherAxis82_g1 ) * sin( Angle44_g1 ) ) ) + appendResult1208 );
+				float3 staticSwitch1164 = (appendResult1220 + appendResult1208); //( ( VertexPosRotationAxis50_g1 + ( VertexPosOtherAxis82_g1 * cos( Angle44_g1 ) ) + ( cross( float3(0,1,0) , VertexPosOtherAxis82_g1 ) * sin( Angle44_g1 ) ) ) + appendResult1208 );
 				#else
 				float3 staticSwitch1164 = ( appendResult1220 + appendResult1208 );
 				#endif

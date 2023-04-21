@@ -15,13 +15,15 @@ public class ButtonFollowVisual : MonoBehaviour
     public GameObject musicListening;
     public GameObject dancingShaking;
 
+    public GameObject player; 
+
     public GameObject paintHandMenu;
     public GameObject sensesHandMenu;
     public GameObject bodyHandMenu;
     public GameObject musicHandMenu;
     public GameObject dancingHandMenu;
 
-    public GameObject floor;
+   // public GameObject floor;
 
     private bool freeze = false;
     private Vector3 initialLocalPos;
@@ -121,13 +123,14 @@ public class ButtonFollowVisual : MonoBehaviour
 
     void StartPaintingTask()
     {
+        player.transform.position = new Vector3(6.99900007f, 11.6479998f, 85.7399979f);
         paintHandMenu.SetActive(true);
         sensesHandMenu.SetActive(false);
         bodyHandMenu.SetActive(false);
         musicHandMenu.SetActive(false);
         dancingHandMenu.SetActive(false);
 
-        floor.SetActive(true);
+        //floor.SetActive(true);
         painting.SetActive(true);
         fiveSenses.SetActive(false);
         bodyScan.SetActive(false);
@@ -136,6 +139,7 @@ public class ButtonFollowVisual : MonoBehaviour
     }
     void StartFiveSenses()
     {
+        
         paintHandMenu.SetActive(false);
         sensesHandMenu.SetActive(true);
         bodyHandMenu.SetActive(false);
@@ -144,7 +148,7 @@ public class ButtonFollowVisual : MonoBehaviour
 
         painting.SetActive(false);
         fiveSenses.SetActive(true);
-        floor.SetActive(false);
+       // floor.SetActive(false);
         bodyScan.SetActive(false);
         dancingShaking.SetActive(false);
         musicListening.SetActive(false);
@@ -157,7 +161,7 @@ public class ButtonFollowVisual : MonoBehaviour
         musicHandMenu.SetActive(false);
         dancingHandMenu.SetActive(false);
 
-        floor.SetActive(true);
+       // floor.SetActive(true);
         painting.SetActive(false);
         fiveSenses.SetActive(false);
         bodyScan.SetActive(true);
@@ -172,7 +176,7 @@ public class ButtonFollowVisual : MonoBehaviour
         musicHandMenu.SetActive(false);
         dancingHandMenu.SetActive(true);
 
-        floor.SetActive(true);
+       // floor.SetActive(true);
         painting.SetActive(false);
         fiveSenses.SetActive(false);
         bodyScan.SetActive(false);
@@ -187,7 +191,7 @@ public class ButtonFollowVisual : MonoBehaviour
         musicHandMenu.SetActive(true);
         dancingHandMenu.SetActive(false);
 
-        floor.SetActive(true);
+       // floor.SetActive(true);
         painting.SetActive(false);
         fiveSenses.SetActive(false);
         bodyScan.SetActive(false);

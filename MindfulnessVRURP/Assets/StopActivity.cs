@@ -28,6 +28,6 @@ public class StopActivity : MonoBehaviour
         fiveSenses.SetActive(false);
         bodyScan.SetActive(false);
         dancingShaking.SetActive(false);
-        musicListening.SetActive(false);
+        musicListening.SetActive(true);
     }
 }

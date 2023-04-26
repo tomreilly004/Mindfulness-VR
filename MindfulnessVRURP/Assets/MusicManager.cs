@@ -10,86 +10,53 @@ public class MusicManager : MonoBehaviour
     public GameObject solfeggioMusic;
     public GameObject binauralMusic;
     public GameObject classicalMusic;
-    public GameObject isochronicMusic; 
+    public GameObject isochronicMusic;
+    public AudioSource currentlyPlaying;
     
     public void PlayJapanese()
     {
-        japaneseMusic.SetActive(true);
-        indianMusic.SetActive(false);
-        handpanMusic.SetActive(false);
-        solfeggioMusic.SetActive(false);
-        binauralMusic.SetActive(false);
-        classicalMusic.SetActive(false);
-        isochronicMusic.SetActive(false);
+        currentlyPlaying.Pause();
+        currentlyPlaying = japaneseMusic.GetComponent<AudioSource>();
+        currentlyPlaying.Play();
     }    
     public void PlayIndian()
     {
-        japaneseMusic.SetActive(false);
-        indianMusic.SetActive(true);
-        handpanMusic.SetActive(false);
-        solfeggioMusic.SetActive(false);
-        binauralMusic.SetActive(false);
-        classicalMusic.SetActive(false);
-        isochronicMusic.SetActive(false);
+        currentlyPlaying.Pause();
+        currentlyPlaying = indianMusic.GetComponent<AudioSource>();
+        currentlyPlaying.Play();
     }    
     public void PlayHandpan()
     {
-        japaneseMusic.SetActive(false);
-        indianMusic.SetActive(false);
-        handpanMusic.SetActive(true);
-        solfeggioMusic.SetActive(false);
-        binauralMusic.SetActive(false);
-        classicalMusic.SetActive(false);
-        isochronicMusic.SetActive(false);
+        currentlyPlaying.Pause();
+        currentlyPlaying = handpanMusic.GetComponent<AudioSource>();
+        currentlyPlaying.Play();
     }    
     public void PlaySolfeggio()
     {
-        japaneseMusic.SetActive(false);
-        indianMusic.SetActive(false);
-        handpanMusic.SetActive(false);
-        solfeggioMusic.SetActive(true);
-        binauralMusic.SetActive(false);
-        classicalMusic.SetActive(false);
-        isochronicMusic.SetActive(false);
+        currentlyPlaying.Pause();
+        currentlyPlaying = solfeggioMusic.GetComponent<AudioSource>();
+        currentlyPlaying.Play();
     }    
     public void PlayBinaural()
     {
-        japaneseMusic.SetActive(false);
-        indianMusic.SetActive(false);
-        handpanMusic.SetActive(false);
-        solfeggioMusic.SetActive(false);
-        binauralMusic.SetActive(true);
-        classicalMusic.SetActive(false);
-        isochronicMusic.SetActive(false);
+        currentlyPlaying.Pause();
+        currentlyPlaying = binauralMusic.GetComponent<AudioSource>();
+        currentlyPlaying.Play();
     }    
     public void PlayClassical()
     {
-        japaneseMusic.SetActive(false);
-        indianMusic.SetActive(false);
-        handpanMusic.SetActive(false);
-        solfeggioMusic.SetActive(false);
-        binauralMusic.SetActive(false);
-        classicalMusic.SetActive(true);
-        isochronicMusic.SetActive(false);
+        currentlyPlaying.Pause();
+        currentlyPlaying = classicalMusic.GetComponent<AudioSource>();
+        currentlyPlaying.Play();
     }    
     public void PlayIsochronic()
     {
-        japaneseMusic.SetActive(false);
-        indianMusic.SetActive(false);
-        handpanMusic.SetActive(false);
-        solfeggioMusic.SetActive(false);
-        binauralMusic.SetActive(false);
-        classicalMusic.SetActive(false);
-        isochronicMusic.SetActive(true);
+        currentlyPlaying.Pause();
+        currentlyPlaying = isochronicMusic.GetComponent<AudioSource>();
+        currentlyPlaying.Play();
     }    
     public void StopMusic()
     {
-        japaneseMusic.SetActive(false);
-        indianMusic.SetActive(false);
-        handpanMusic.SetActive(false);
-        solfeggioMusic.SetActive(false);
-        binauralMusic.SetActive(false);
-        classicalMusic.SetActive(false);
-        isochronicMusic.SetActive(false);
+        currentlyPlaying.Pause();
     }
 }

@@ -136,7 +136,7 @@ public class ButtonFollowVisual : MonoBehaviour
         fiveSenses.SetActive(false);
         bodyScan.SetActive(false);
         dancingShaking.SetActive(false);
-        musicListening.SetActive(false);
+        //musicListening.SetActive(false);
     }
     void StartFiveSenses()
     {
@@ -186,7 +186,7 @@ public class ButtonFollowVisual : MonoBehaviour
         fiveSenses.SetActive(false);
         bodyScan.SetActive(false);
         dancingShaking.SetActive(true);
-        musicListening.SetActive(false);
+        //musicListening.SetActive(false);
     }    
     void StartMusicListening()
     {

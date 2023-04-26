@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6939426749494100237}
   - component: {fileID: 8325166768228047196}
   - component: {fileID: 8729037310656492912}
+  - component: {fileID: 7813809329818487303}
   m_Layer: 0
   m_Name: Button Manager
   m_TagString: Untagged
@@ -76,3 +77,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DrawTexture: {fileID: 8400000, guid: 00c7a048c58144845919c4b3109bccf7, type: 2}
+--- !u!114 &7813809329818487303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7529809146371863198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f11fad0e80f599e47af2d4ca6b60f88b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

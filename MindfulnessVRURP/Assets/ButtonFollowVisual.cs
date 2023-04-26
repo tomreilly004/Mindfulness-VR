@@ -123,7 +123,8 @@ public class ButtonFollowVisual : MonoBehaviour
 
     void StartPaintingTask()
     {
-        player.transform.position = new Vector3(6.99900007f, 11.6479998f, 85.7399979f);
+        player.transform.position = new Vector3(8.89000034f, 10.1070004f, 84.1500015f);
+
         paintHandMenu.SetActive(true);
         sensesHandMenu.SetActive(false);
         bodyHandMenu.SetActive(false);
@@ -139,7 +140,7 @@ public class ButtonFollowVisual : MonoBehaviour
     }
     void StartFiveSenses()
     {
-        
+        player.transform.position = new Vector3(-34.0699997f, 3.46000004f, 80.2460022f);
         paintHandMenu.SetActive(false);
         sensesHandMenu.SetActive(true);
         bodyHandMenu.SetActive(false);
@@ -155,6 +156,7 @@ public class ButtonFollowVisual : MonoBehaviour
     }    
     void StartBodyScan()
     {
+        player.transform.position = new Vector3(29.7099991f, 4.82999992f, 156.929993f);
         paintHandMenu.SetActive(false);
         sensesHandMenu.SetActive(false);
         bodyHandMenu.SetActive(true);
@@ -170,6 +172,9 @@ public class ButtonFollowVisual : MonoBehaviour
     }    
     void StartDancing()
     {
+
+        player.transform.position = new Vector3(50.7799988f, 4.90999985f, 61.4000015f);
+
         paintHandMenu.SetActive(false);
         sensesHandMenu.SetActive(false);
         bodyHandMenu.SetActive(false);
@@ -198,4 +203,6 @@ public class ButtonFollowVisual : MonoBehaviour
         dancingShaking.SetActive(false);
         musicListening.SetActive(true);
     }
+
+
 }

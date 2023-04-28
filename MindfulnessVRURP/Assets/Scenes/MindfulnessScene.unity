@@ -7961,6 +7961,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2571965765610971619, guid: 5f5502f384604cb489f9638dfa698aa4, type: 3}
+      propertyPath: m_HDR
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2571965765610971619, guid: 5f5502f384604cb489f9638dfa698aa4, type: 3}
+      propertyPath: m_AllowMSAA
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2571965765610971619, guid: 5f5502f384604cb489f9638dfa698aa4, type: 3}
+      propertyPath: m_TargetDisplay
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2611842065234425628, guid: 5f5502f384604cb489f9638dfa698aa4, type: 3}
       propertyPath: m_IsActive
       value: 1
